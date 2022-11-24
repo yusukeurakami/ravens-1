@@ -1,1 +1,2 @@
+include ravens/environment/assets/
 recursive-include ravens *.obj *.mtl *.stl *.urdf .jpg

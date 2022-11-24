@@ -55,6 +55,6 @@ core.setup(
     author_email='ravens-team@google.com',
     url='https://github.com/google-research/ravens',
     packages=find_packages(),
-    package_data={find_packages(): ['environments/assets/ur5/ur5.urdf']},
+    package_data={'ravens': ['environments/assets/ur5/ur5.urdf']},
     install_requires=install_requires,
 )

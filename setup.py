@@ -55,6 +55,7 @@ core.setup(
     author_email='ravens-team@google.com',
     url='https://github.com/google-research/ravens',
     packages=find_packages(),
+    include_package_data=True,
     # package_data={'ravens': ['environments/assets/*']},
     install_requires=install_requires,
 )

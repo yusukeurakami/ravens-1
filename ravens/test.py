@@ -27,9 +27,10 @@ from ravens import tasks
 from ravens.environments.environment import Environment
 import tensorflow as tf
 
+default_asset_path = os.path.join('/'.join(r for r in ravens.__file__.split(os.sep)[:-1]), 'environments/assets/')
 flags.DEFINE_string('root_dir', '.', '')
 flags.DEFINE_string('data_dir', '.', '')
-flags.DEFINE_string('assets_root', './assets/', '')
+flags.DEFINE_string('assets_root', default_asset_path, '')
 flags.DEFINE_bool('disp', False, '')
 flags.DEFINE_bool('shared_memory', False, '')
 flags.DEFINE_string('task', 'hanoi', '')

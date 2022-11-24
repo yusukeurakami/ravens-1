@@ -27,7 +27,8 @@ from ravens.dataset import Dataset
 from ravens.environments.environment import ContinuousEnvironment
 from ravens.environments.environment import Environment
 
-flags.DEFINE_string('assets_root', '.', '')
+default_asset_path = os.path.join('/'.join(r for r in ravens.__file__.split(os.sep)[:-1]), 'environments/assets/')
+flags.DEFINE_string('assets_root', default_asset_path, '')
 flags.DEFINE_string('data_dir', '.', '')
 flags.DEFINE_bool('disp', False, '')
 flags.DEFINE_bool('shared_memory', False, '')

@@ -1,0 +1,1 @@
+recursive-include src *.obj *.mtl *.stl *.urdf .jpg

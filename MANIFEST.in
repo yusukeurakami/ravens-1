@@ -1,1 +1,2 @@
-recursive-include environment/assets/ *.obj *.mtl *.stl *.urdf *.jpg
+include ravens/environment/assets/ur5/ur5.urdf
+recursive-include ravens *.obj *.mtl *.stl *.urdf *.jpg
